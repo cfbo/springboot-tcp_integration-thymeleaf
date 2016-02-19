@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"></meta>
+    <title>Input TCP</title>
+    
+    <link rel='stylesheet prefetch' href='http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css'></link>
+	<link rel='stylesheet prefetch' href='http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css'></link>
+<!--     <link rel="stylesheet" href="../static/css/core.css"></link> -->
+    <link href="../static/css/core.css" th:href="@{/css/core.css}" rel="stylesheet" media="screen" />
+  </head>
+
+  <body>
+  <div class="container">
+  <h1>Input TCP Message Monitor</h1>
+  
+		<div class="datagrid">
+			<table>
+				<thead>
+					<tr>
+						<th>NA</th>
+						<th>Message Content</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>NA</td>
+						<td th:text="${msg}" />
+					</tr>
+					<tr class="alt">
+						<td></td>
+						<td></td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+
+	</div>
+  </body>
+</html>
